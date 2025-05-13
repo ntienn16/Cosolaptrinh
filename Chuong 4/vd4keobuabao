@@ -1,0 +1,31 @@
+import random
+def nhap():
+    print("1 la Bua, 2 la Keo, 3 la Bao")
+    nguoi=int(input("nguoi:"))
+    return nguoi
+def kq(ketqua,nguoi):    
+    if  ketqua==1:
+        if  nguoi==1:
+            print("hoa")
+        elif    nguoi==2:
+            print("Nguoi thua")
+        elif    nguoi==3:
+            print("Nguoi thang")
+    elif    ketqua==2:
+        if  nguoi==1:
+            print("Nguoi thang")
+        elif    nguoi==2:
+            print("hoa")
+        elif    nguoi==3:
+            print("nguoi thua")
+    elif    ketqua==3:
+        if  nguoi==1:
+            print("nguoi thua")
+        elif    nguoi==2:
+            print("nguoi thang")
+        elif    nguoi==3:
+            print("hoa")
+nguoi=nhap()
+ketqua=random.randint(1,3)
+dapan=kq
+print(dapan)
